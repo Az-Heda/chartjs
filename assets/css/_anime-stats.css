@@ -1,0 +1,26 @@
+:root {
+	--default-text-color: #fff;
+	--default-bg-color: #222;
+	--user-command-color: #fff;
+	--response-command-color: #aaa;
+	--scrollbar-handle-color: #333;
+	--scrollbar-hover-color: #555;
+	--scrollbar-width: 10px;
+}
+
+body {
+	background-color: var(--default-bg-color)
+}
+
+::-webkit-scrollbar {
+	width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-handle-color);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--scrollbar-hover-color);
+}

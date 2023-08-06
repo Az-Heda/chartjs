@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stats anime</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/_.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/_anime-stats.css"/>
+		<script src="anime.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/_.js"></script>
+		<script src="assets/js/chartjs.js"></script>
+		<script src="assets/js/_anime-stats.js"></script>
+		<script>
+			$(document).ready(() => {
+				//setSocket();
+				//setSocketEndpoint();
+				global['data'] = tempAnime;
+				showGraphs();
+			})
+		</script>
+	</head>
+	<body>
+		<div class="row uniform" id="container1">
+			<div class="1u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;"></div>
+			<div class="7u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;">
+				<canvas id="test1"></canvas>
+			</div>
+			<div class="3u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;">
+				<canvas id="test2"></canvas>
+			</div>
+			<div class="1u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;"></div>
+		</div>
+		<div class="row uniform" id="container2">
+			<div class="1u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;"></div>
+			<div class="3u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;">
+				<canvas id="test3"></canvas>
+			</div>
+			<div class="1u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;"></div>
+		</div>
+		<div class="row uniform" id="container3">
+			<div class="1u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;"></div>
+			<div class="10u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;" id="table-test"></div>
+			<div class="1u$ 12u$(xsmall)" style="clear: none; padding-left: 2px;"></div>
+		</div>
+	</body>
+</html>
